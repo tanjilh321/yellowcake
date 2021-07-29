@@ -3,7 +3,7 @@ const postcssPresetEnv = require('postcss-preset-env')
 module.exports = {
   siteMetadata: {
     title: 'Yellowcake',
-    siteUrl: 'https://dev-tanjil88.pantheonsite.io/'
+    siteUrl: 'https://dev-tanjil88.pantheonsite.io/graphql'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
