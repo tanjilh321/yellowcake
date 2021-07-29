@@ -1,10 +1,16 @@
 const postcssPresetEnv = require('postcss-preset-env')
 
 module.exports = {
-  siteMetadata: {
-    title: 'Yellowcake',
-    siteUrl: 'https://dev-tanjil88.pantheonsite.io/graphql'
-  },
+  plugins: [
+    {
+      resolve: `gatsby-source-wordpress`,
+      options: {
+        url: process.env.WPGRAPHQL_URL || `https://dev-tanjil88.pantheonsite.io/graphql`,
+      },
+    },
+  ],
+};
+
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-yaml',
